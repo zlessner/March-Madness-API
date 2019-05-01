@@ -34,7 +34,7 @@ let teams = mongoose.model("teams", Teams)
 module.exports = teams
 
 
-
+//need to create relationship between model 
 
 
 // finalRegion: {
