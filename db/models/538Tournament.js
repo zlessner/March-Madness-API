@@ -1,6 +1,6 @@
 const mongoose = require('../connection')
 
-const TournamentSchema = new mongoose.Schema({
+const FiveThreeEightSchema = new mongoose.Schema({
     2019: [ 
       {
         Team: String,
@@ -16,7 +16,7 @@ const TournamentSchema = new mongoose.Schema({
 
 })
 
-let tournament = mongoose.model("tournament", TournamentSchema)
+let tournament = mongoose.model("tournament", FiveThreeEightSchema)
 
 module.exports = tournament
 
