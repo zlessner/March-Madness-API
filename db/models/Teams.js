@@ -1,6 +1,8 @@
 const mongoose = require('../connection')
 
-const TeamsSchema = new mongoose.Schema({
+const Schema = mongoose.Schema
+
+const Teams= new Schema ({
     regions: [ 
      
         {id:String,
@@ -10,7 +12,12 @@ const TeamsSchema = new mongoose.Schema({
     ,
     teams: [
         {
-       id: []
+       id: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Tournament'
+        }
+       ]
     }
 ] 
     ,
@@ -22,7 +29,7 @@ const TeamsSchema = new mongoose.Schema({
     complete: Date
 })
 
-let teams = mongoose.model("teams", TeamsSchema)
+let teams = mongoose.model("teams", Teams)
 
 module.exports = teams
 
