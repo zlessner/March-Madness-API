@@ -12,7 +12,7 @@ const TeamsSchema = new mongoose.Schema({
         {
        id: []
     }
-]
+] 
     ,
 
     // order: [{seed:Number
