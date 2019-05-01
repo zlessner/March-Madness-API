@@ -18,5 +18,13 @@ app.use('/api/ncaam2019/', teamsController)
 app.use('/api/538Tournament/', fiveThreeController)
 app.use('/api/popPicksTournament/', popPicksController)
 
+
+app.set("port", process.env.PORT || 3001)
+
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`)
+})
+
+
 app.listen(2500, () => console.log('They see me rollin...on port 2500...'))
  
