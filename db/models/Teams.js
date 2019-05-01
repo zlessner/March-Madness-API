@@ -15,7 +15,7 @@ const Teams= new Schema ({
        id: [
         {
             type: Schema.Types.ObjectId,
-            ref: 'Tournament'
+            ref: '538Tournament'
         }
        ]
     }
