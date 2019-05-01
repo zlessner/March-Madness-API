@@ -18,4 +18,3 @@ app.use('/api/ncaam2019/', teamsController)
 app.use('/api/tournament/', tournamentController)
 
 app.listen(2500, () => console.log('They see me rollin...on port 2500...'))
- 
