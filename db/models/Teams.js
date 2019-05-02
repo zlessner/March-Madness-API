@@ -2,29 +2,13 @@ const mongoose = require('../connection')
 
 const Schema = mongoose.Schema
 
-const Teams= new Schema ({
-    regions: [ 
-     
-        {id:String,
-        name: String,
-        fullname: String
-    }]
-    ,
-    teams: [
+const Teams = new Schema({
+    regions: [
         {
-       id: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: '538Tournament'
-        }
-       ]
-    }
-] 
+            region: String,
+            Team: []
+        }]
     ,
-
-    // order: [{seed:Number
-    // }],
-    
     locks: Date,
     complete: Date
 })

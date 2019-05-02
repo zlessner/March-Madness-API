@@ -1,7 +1,8 @@
 const Teams = require('./models/Teams')
 const FiveThreeTournament = require('./models/538Tournament')
 const PopPicksTournament = require('./models/Pop-Picks')
-const ncaam2019 = require('../node_modules/bracket-data/data/ncaam/2019')
+//const baseketball2019 = require('../node_modules/bracket-data/data/ncaam/2019')
+const ncaam2019 = require('./2019Teams')
 const tourney2019 = require('./5382019')
 const popPicks2019 = require('./PopPicks2019')
 
@@ -21,12 +22,12 @@ PopPicksTournament.deleteMany({}).then(() => {
 
 //create databases
 
-    Teams.create(ncaam2019).then((createTeams) => {
-        console.log(createTeams)
-    })
+    FiveThreeTournament.create(tourney2019).then((newTournament) => {
+        console.log(newTournament)
 
-    FiveThreeTournament.create(tourney2019).then((createTournament) => {
-        console.log(createTournament)
+        Teams.create(ncaam2019).then((newTeams) => {
+            console.log(newTeams)
+        })
     })
 
     PopPicksTournament.create(popPicks2019).then((createPop) => {
