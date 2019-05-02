@@ -1,6 +1,6 @@
 const Teams = require('./models/Teams')
 const FiveThreeTournament = require('./models/538Tournament')
-const PopPicksTournament = require('./models/PopPicks1')
+const PopPicksTournament = require('./models/PopPicks0')
 const ncaam2019 = require('../node_modules/bracket-data/data/ncaam/2019')
 const tourney2019 = require('./5382019')
 const popPicks2019 = require('./PopPicks2019')
