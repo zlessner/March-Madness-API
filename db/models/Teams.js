@@ -6,23 +6,21 @@ const Teams = new Schema({
     regions: [
         {
             region: String,
-            Team: []
+            Team: Array
         }]
     ,
     locks: Date,
-    complete: Date
+    complete: Date,
+    scoring: {
+        standard: Array
+    },
+    order: Array,
+
+
 })
 
 let teams = mongoose.model("teams", Teams)
 
 module.exports = teams
 
-
-//need to create relationship between model 
-
-
-// finalRegion: {
-//     id: String,
-//     name: String,
-//     championshipName: String}
-// ,
+//objects coming back in weird order because objects have no orders, just arrays
