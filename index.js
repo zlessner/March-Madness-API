@@ -11,10 +11,10 @@ app.use(bodyParser.json())
 
 //redirects to api/ncaam page when basketball entered in URL
 app.use('/basketball', (req,res) => {
-	res.redirect('/api/ncaam2019/')
+	res.redirect('/')
 })
 
-app.use('/api/ncaam2019/', teamsController)
+app.use('/', teamsController)
 app.use('/api/538Tournament/', fiveThreeController)
 app.use('/api/popPicksTournament/', popPicksController)
 
