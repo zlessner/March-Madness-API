@@ -1,5 +1,5 @@
-{"2019": 
- [
+{"Year":2019, "Bracket": 
+[
 {"Team":"Duke" ,"Seed":	1	 ,"Region":"East" ,"Round1":	0.994	 ,"Round2":	0.977	 ,"Round3":	0.932	 ,"Round4":	0.768	 ,"Round5":	0.629	 ,"Round6":	0.461	},
 {"Team":"Virginia" ,"Seed":	1	 ,"Region":"South" ,"Round1":	0.985	 ,"Round2":	0.934	 ,"Round3":	0.799	 ,"Round4":	0.445	 ,"Round5":	0.182	 ,"Round6":	0.067	},
 {"Team":"Gonzaga" ,"Seed":	1	 ,"Region":"West" ,"Round1":	0.988	 ,"Round2":	0.879	 ,"Round3":	0.704	 ,"Round4":	0.462	 ,"Round5":	0.146	 ,"Round6":	0.09	},

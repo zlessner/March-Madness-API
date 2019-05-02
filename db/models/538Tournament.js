@@ -3,7 +3,7 @@ const mongoose = require('../connection')
 const Schema= mongoose.Schema
 
 const FiveThreeEightSchema = new mongoose.Schema({
-    2019: [ 
+  Year: Number, Bracket: [  
       {
         Team: {type: Schema.Types.String, ref: "teams" },
         Seed: String,
@@ -21,6 +21,3 @@ const FiveThreeEightSchema = new mongoose.Schema({
 let tournament = mongoose.model("tournament", FiveThreeEightSchema)
 
 module.exports = tournament
-
-//seeing if deploying heroku/github work
-//adding frontend 
