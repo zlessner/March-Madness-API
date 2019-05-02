@@ -19,4 +19,3 @@ const popPicksSchema = new mongoose.Schema({
 let ppicks = mongoose.model("ppicks", popPicksSchema)
 
 module.exports = ppicks
-
