@@ -1,9 +1,11 @@
 const mongoose = require('../connection')
 
+const Schema= mongoose.Schema
+
 const popPicksSchema = new mongoose.Schema({
-    2019: [ 
+  Year: Number, Bracket: [ 
       {
-        Team: String,
+        Team: {type: Schema.Types.String, ref: "teams" },
         Seed: String,
         Region: String,
         Round1: Number,
