@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router()
 
-const PopPicks = require('../models/PopPicks')
+const PopPicks = require('../models/Pop-Picks')
 
 router.get("/", (req, res) => {
   console.log('received a request on /')
