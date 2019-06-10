@@ -1,3 +1,4 @@
+const cors = require('cors')
 const express = require('express')
 const app = express()
 const teamsController = require('./db/controllers/teams')
@@ -5,6 +6,7 @@ const fiveThreeController = require('./db/controllers/538tournament')
 const popPicksController = require('./db/controllers/popPicks')
 const bodyParser = require('body-parser')
 
+app.use(cors())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 
