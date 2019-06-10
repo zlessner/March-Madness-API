@@ -8,7 +8,7 @@ const popPicksSchema = new mongoose.Schema({
     {Region: String, Schools: [ 
       {
         Team: {type: Schema.Types.String, ref: "teams" },
-        Seed: String,
+        Seed: Number,
         Round1: Number,
         Round2: Number,
         Round3: Number,
