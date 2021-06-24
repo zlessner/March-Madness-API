@@ -4,11 +4,14 @@ const app = express()
 const teamsController = require('./db/controllers/teams')
 const fiveThreeController = require('./db/controllers/538tournament')
 const popPicksController = require('./db/controllers/popPicks')
-const bodyParser = require('body-parser')
+// const bodyParser = require('body-parser')
 
 app.use(cors())
-app.use(bodyParser.urlencoded({extended:true}))
-app.use(bodyParser.json())
+// app.use(bodyParser.urlencoded({extended:true}))
+// app.use(bodyParser.json())
+
+app.use(express.urlencoded({extended: true})); 
+app.use(express.json());
 
 
 //redirects to api/ncaam page when basketball entered in URL
